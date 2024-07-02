@@ -17,8 +17,9 @@
 
 body {
   background-color: var(--pri-cream);
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
 }
 
@@ -59,7 +60,8 @@ main .img-container {
 
 .product-information h2 {
   font-family: "Fraunces", sans-serif;
-  font-size: clamp(1.25rem, 6vw, 1.75rem);
+  font-size: clamp(1.25rem, 6vw, 2rem);
+  text-wrap: balance;
 }
 
 .product-information p {
@@ -72,13 +74,14 @@ main .img-container {
 
 .prices {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2rem;
   padding: 0 0.5rem;
   flex-wrap: wrap;
 }
 
 .prices .cur-price {
-  font-size: clamp(1.25rem, 4vw, 2rem);
+  font-size: clamp(1.25rem, 7vw, 2rem);
   font-family: "Fraunces", sans-serif;
   color: var(--pri-darkCyan);
 }
@@ -110,7 +113,7 @@ button.active {
 }
 
 /* mobile display */
-@media (320px <= width <= 480px) {
+@media (300px <= width <= 600px) {
   main {
     height: 95vh;
     width: 90%;
