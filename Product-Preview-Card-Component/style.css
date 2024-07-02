@@ -51,7 +51,7 @@ main .img-container {
 
 .product-information h1 {
   text-transform: uppercase;
-  font-size: clamp(0.6rem, 4vw, 1.25rem);
+  font-size: clamp(0.5rem, 4vw, 1.1rem);
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.25rem;
   color: var(--neu-darkGrayBlue);
