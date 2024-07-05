@@ -103,11 +103,11 @@ body {
 }
 
 .subj-container {
-	display: flex;
-	flex-direction: column;
-	gap: 0.5rem;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .sub {
@@ -190,7 +190,7 @@ button.active {
     height: auto;
     flex-direction: column;
     border-radius: 0;
-	box-shadow: none;
+    box-shadow: none;
   }
 
   .result-container {
@@ -200,8 +200,8 @@ button.active {
   }
 
   .result-container p:last-child {
-	width: 65%;
-	font-size: 0.8rem;
+    width: 65%;
+    font-size: 0.8rem;
   }
 
   .summary-container {
