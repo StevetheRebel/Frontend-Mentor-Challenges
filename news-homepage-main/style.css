@@ -127,7 +127,7 @@ nav #menu-close {
 }
 
 .frame1-content .text-ctn button {
-  background-color: hsl(0, 97%, 59%);
+  background-color: hsl(240, 93%, 5%);
   border: none;
   color: white;
   font-size: 0.75rem;
@@ -136,6 +136,10 @@ nav #menu-close {
   text-transform: uppercase;
   font-family: "Inter-Regular";
   letter-spacing: 2px;
+}
+
+.frame1-content .text-ctn button {
+    background-color: hsl(0, 97%, 59%);
 }
 
 .home .frame2 {
