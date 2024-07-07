@@ -1,3 +1,4 @@
+// switch between active navigation links
 const navLinks = document.querySelectorAll("li");
 
 function removeActive() {
@@ -10,23 +11,23 @@ navLinks.forEach((navLink) => {
   navLink.addEventListener("click", () => {
     removeActive();
     navLink.classList.add("active");
-    console.log(navLink.innerText)
+    console.log(navLink.innerText);
   });
 });
 
-// menu icon toggle
+// menu toggle
 const openMenu = document.getElementById("menu-open");
 const closeMenu = document.getElementById("menu-close");
-const menu = document.getElementById('menu')
+const menu = document.getElementById("menu");
 
 openMenu.addEventListener("click", () => {
   openMenu.style.display = "none";
   closeMenu.style.display = "block";
-  menu.style.display = 'flex'
+  menu.style.display = "flex";
 });
 
 closeMenu.addEventListener("click", () => {
   closeMenu.style.display = "none";
   openMenu.style.display = "block";
-  menu.style.display = 'none'
+  menu.style.display = "none";
 });
