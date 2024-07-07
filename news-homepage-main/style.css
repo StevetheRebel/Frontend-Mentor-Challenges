@@ -138,7 +138,7 @@ nav #menu-close {
   letter-spacing: 2px;
 }
 
-.frame1-content .text-ctn button {
+.frame1-content .text-ctn button:hover {
     background-color: hsl(0, 97%, 59%);
 }
 
