@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="input-ctn">
+        <div class="input day-ctn">
+          <label for="day">day</label>
+          <input type="text" name="day" id="day" placeholder="DD" />
+          <p class="msg">This field is required</p>
+        </div>
+        <div class="input month-ctn">
+          <label for="month">month</label>
+          <input type="text" name="month" id="month" placeholder="MM" />
+          <p class="msg">This field is required</p>
+        </div>
+        <div class="input year-ctn">
+          <label for="year">year</label>
+          <input type="text" name="year" id="year" placeholder="YYYY" />
+          <p class="msg">This field is required</p>
+        </div>
+      </div>
+      <div class="strike">
+        <img
+          src="assets/images/icon-arrow.svg"
+          alt="arrow-submit"
+          id="run-btn"
+        />
+      </div>
+      <div class="output-ctn">
+        <p><span id="years">--</span> years</p>
+        <p><span id="months">--</span> months</p>
+        <p><span id="days">--</span> days</p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

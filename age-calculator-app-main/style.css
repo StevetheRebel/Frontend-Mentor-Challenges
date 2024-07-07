@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* local stored fonts */
+
+@font-face {
+  font-family: "Poppins";
+  src: url(assets/fonts/Poppins-Regular.ttf) format("trutype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(assets/fonts/Poppins-Italic.ttf) format("trutype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(assets/fonts/Poppins-Bold.ttf) format("trutype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(assets/fonts/Poppins-BoldItalic.ttf) format("trutype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(assets/fonts/Poppins-ExtraBold.ttf) format("trutype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(assets/fonts/Poppins-ExtraBoldItalic.ttf) format("trutype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+body {
+  background-color: hsl(300, 20%, 93%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  width: min(500px, 95%);
+  height: auto;
+  border: 1px solid;
+  border-radius: 2rem 2rem 5rem 2rem;
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 5%;
+}
+
+main .input-ctn {
+  width: min(300px, 80%);
+  display: flex;
+  justify-content: space-between;
+}
+
+main .input-ctn .input {
+  width: min(6rem, 30%);
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-ctn .input label {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.input-ctn .input input {
+  width: min(5rem, 90%);
+  padding: 0.5rem 0;
+  border: 0.25px solid hsl(0, 11%, 90%);
+  padding-left: 0.75rem;
+  border-radius: 0.25rem;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.input-ctn .input input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: hsl(0, 11%, 70%);
+}
+
+.input-ctn .input p {
+  font-size: clamp(6px, 2vw, 0.5rem);
+  color: red;
+  margin: 0.25rem 0;
+  visibility: hidden;
+}
+
+main .strike {
+  border: 1px solid rgba(194, 193, 193, 0.199);
+  position: relative;
+  height: 1px;
+  margin-top: 2rem;
+  width: min(350px, 90%);
+}
+
+main .strike #run-btn {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-color: hsl(268, 95%, 62%);
+  padding: 0.5rem;
+  border-radius: 50%;
+  right: -1.5rem;
+  top: -1.5rem;
+}
+
+main .output-ctn {
+  margin-top: 1rem;
+}
+
+.output-ctn p {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.output-ctn p span {
+  color: hsl(268, 95%, 62%);
+  letter-spacing: 4px;
+}
