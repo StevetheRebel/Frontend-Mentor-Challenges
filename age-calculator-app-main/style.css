@@ -134,6 +134,10 @@ main .strike #run-btn {
   top: -1.5rem;
 }
 
+main .strike #run-btn:hover {
+  background-color: hsl(268, 95%, 20%);
+}
+
 main .output-ctn {
   margin-top: 1rem;
 }
