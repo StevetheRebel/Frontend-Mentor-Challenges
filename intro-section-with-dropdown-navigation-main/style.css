@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    font-family: "Epilogue", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    background-color: #f2f2f2;
+}
+
+/* HEADER STYLING */
+
+header {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    position: relative;
+    z-index: 10;
+}
+
+header .nav1 {
+    display: flex;
+    gap: 3rem;
+    height: inherit;
+    align-items: center;
+    position: relative;
+    background-color: #f2f2f2;
+}
+
+.nav1 .logo {
+    height: 2rem;
+    margin-left: 1rem;
+}
+
+.nav1 > ul {
+    display: flex;
+    position: relative;
+    gap: 2rem;
+    font-size: 1rem;
+}
+
+.nav1 > ul li {
+    padding: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    color: #868585;
+    font-weight: 500;
+}
+
+.nav1 > ul > li:hover {
+    color: #000;
+}
+
+.nav1 > ul li .arrow-up {
+    display: none;
+}
+
+.nav1 > ul li > ul {
+    z-index: -3;
+}
+
+/* DROP DOWN STYLING */
+
+nav.nav1 ul li ul.features {
+    display: none;
+    top: 3.5rem;
+    position: absolute;
+    right: 0;
+    width: 185%;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 12px 30px rgba(75, 74, 74, 0.336);
+    animation: slideIn 1s forwards ease-in-out;
+}
+
+nav.nav1 ul li ul.features li img{
+    padding-right: 1rem;
+}
+
+nav.nav1 ul li ul.company {
+    display: none;
+    top: 3.5rem;
+    position: absolute;
+    left: 0;
+    width: 130%;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 12px 30px rgba(75, 74, 74, 0.336);
+    animation: slideIn 1s forwards ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        top: -10rem;
+    } to {
+        top: 3.5rem;
+    }
+}
+
+header .nav2 {
+    width: 30%;
+    height: inherit;
+}
+
+.nav2 ul {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav2 ul li {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    color: #868585;
+}
+
+.nav2 ul li:last-child {
+    border: 1px solid;
+    border-radius: 0.5rem;
+}
+
+.nav2 ul li:hover {
+    color: black;
+}
+
+header .menus {
+    display: none;
+}
+
+header .menus #menu-open, #close-menu {
+    display: none;
+    width: 3rem;
+}
+
+main {
+    height: calc(100vh - 8rem);
+}
+
+footer {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p a {
+    color: #000;
+}
+
+@media (320px <= width <= 900px) {
+    header .nav1 > ul, .nav2 {
+        display: none;
+    }
+
+    header .menus {
+        margin-right: 5%;
+        display: block;
+    }
+
+    header .menus #menu-open{
+        display: block;
+        margin-right: 5%;
+    }
+}
