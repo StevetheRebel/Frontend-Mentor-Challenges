@@ -9,83 +9,126 @@
       href="images/favicon-32x32.png"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <section class="dark"></section>
     <header>
-      <nav class="nav1">
+      <div class="logo-ctn">
         <img src="images/logo.svg" alt="logo" class="logo" />
-        <ul>
-          <li>
-            Feature
-            <img
-              src="images/icon-arrow-down.svg"
-              alt="arrow-down"
-              class="arrow-down"
-            />
-            <img
-              src="images/icon-arrow-up.svg"
-              alt="arrow-up"
-              class="arrow-up"
-            />
-            <ul class="features">
-              <li>
-                <img src="images/icon-todo.svg" alt="todo-icon" />Todo List
-              </li>
-              <li>
-                <img
-                  src="images/icon-calendar.svg"
-                  alt="calendar-icon"
-                />Calendar
-              </li>
-              <li>
-                <img
-                  src="images/icon-reminders.svg"
-                  alt="reminders-icon"
-                />Reminders
-              </li>
-              <li>
-                <img
-                  src="images/icon-planning.svg"
-                  alt="planning-icon"
-                />Planning
-              </li>
-            </ul>
-          </li>
-          <li>
-            Company
-            <img
-              src="images/icon-arrow-down.svg"
-              alt="arrow-down"
-              class="arrow-down"
-            />
-            <img
-              src="images/icon-arrow-up.svg"
-              alt="arrow-up"
-              class="arrow-up"
-            />
-            <ul class="company">
-              <li>History</li>
-              <li>Our Team</li>
-              <li>Blog</li>
-            </ul>
-          </li>
-          <li>Careers</li>
-          <li>About</li>
-        </ul>
-      </nav>
-      <nav class="nav2">
-        <ul>
-          <li>Login</li>
-          <li>Register</li>
-        </ul>
+      </div>
+      <nav class="nav-ctn">
+        <nav class="nav1">
+          <ul>
+            <li class="featureDropDown">
+              Feature
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="arrow-down"
+                class="arrow arrow-down"
+              />
+              <img
+                src="images/icon-arrow-up.svg"
+                alt="arrow-up"
+                class="arrow arrow-up"
+              />
+              <ul class="features">
+                <li>
+                  <img src="images/icon-todo.svg" alt="todo-icon" />Todo List
+                </li>
+                <li>
+                  <img
+                    src="images/icon-calendar.svg"
+                    alt="calendar-icon"
+                  />Calendar
+                </li>
+                <li>
+                  <img
+                    src="images/icon-reminders.svg"
+                    alt="reminders-icon"
+                  />Reminders
+                </li>
+                <li>
+                  <img
+                    src="images/icon-planning.svg"
+                    alt="planning-icon"
+                  />Planning
+                </li>
+              </ul>
+            </li>
+            <li class="companyDropDown">
+              Company
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="arrow-down"
+                class="arrow arrow-down"
+              />
+              <img
+                src="images/icon-arrow-up.svg"
+                alt="arrow-up"
+                class="arrow arrow-up"
+              />
+              <ul class="company">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </li>
+            <li>Careers</li>
+            <li>About</li>
+          </ul>
+        </nav>
+        <nav class="nav2">
+          <ul>
+            <li>Login</li>
+            <li>Register</li>
+          </ul>
+        </nav>
       </nav>
       <nav class="menus">
-        <img src="images/icon-menu.svg" alt="menu-open" id="menu-open">
-        <img src="images/icon-close-menu.svg" alt="close-menu" id="close-menu">
+        <img
+          src="images/icon-menu.svg"
+          alt="menu-open"
+          id="menu-open"
+          class="menu active"
+        />
+        <img
+          src="images/icon-close-menu.svg"
+          alt="close-menu"
+          id="close-menu"
+          class="menu"
+        />
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section>
+        <div class="info">
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="sponsors">
+          <img src="images/client-databiz.svg" alt="databiz logo" />
+          <img src="images/client-audiophile.svg" alt="audiophile logo" />
+          <img src="images/client-meet.svg" alt="meet logo" />
+          <img src="images/client-maker.svg" alt="maker logo" />
+        </div>
+      </section>
+      <picture>
+        <source
+          media="(max-width: 800px)"
+          srcset="images/image-hero-mobile.webp"
+        />
+        <img src="images/image-hero-desktop.webp" alt="hero image" />
+      </picture>
+    </main>
 
     <footer class="attribution">
       <p>
@@ -101,14 +144,6 @@
 </html>
 
 <!-- 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
   Make remote work
 
   Get your team in sync, no matter your location. Streamline processes, 
