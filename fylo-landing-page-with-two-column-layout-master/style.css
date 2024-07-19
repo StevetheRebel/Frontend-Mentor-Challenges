@@ -1,0 +1,82 @@
+/* import Raleway Font for Headings */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* import Open Sans Font for body */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+:root {
+    --pri-dark-blue: hsl(243, 87%, 12%);
+    --pri-desaturated-blue: hsl(238, 22%, 44%);
+    --accent-bright-blue: hsl(224, 93%, 58%);
+    --accent-moderate-cyan: hsl(170, 45%, 43%);
+    --neutral-grayish-blue: hsl(240, 75%, 98%);
+    --neurtal-light-gray: hsl(0, 0%, 75%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: hsl(0, 0%, 0%);
+}
+
+body {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    font-family: "Raleway", sans-serif;
+}
+
+header .logo-ctn {
+    width: 40%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-ctn img {
+    height: clamp(2rem, 4vw, 4rem);
+}
+
+header nav {
+    width: 60%;
+    height: inherit;
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+}
+
+nav ul li {
+    text-transform: capitalize;
+    width: 6rem;
+    text-align: center;
+}
+
+
+@media (320px <= width <= 500px) {
+    header {
+        padding: 0;
+    }
+
+    nav ul {
+        gap: 0.15rem;
+    }
+}
