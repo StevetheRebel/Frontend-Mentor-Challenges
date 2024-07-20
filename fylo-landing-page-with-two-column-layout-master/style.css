@@ -173,6 +173,7 @@ button {
     font-size: clamp(0.75rem, 5vw, 1rem);
     padding: 0.5rem 2rem;
     border: none;
+    border-radius: 0.5rem;
     background-color: var(--accent-bright-blue);
     color: var(--neutral-grayish-blue);
     cursor: pointer;
@@ -301,7 +302,80 @@ main .call-to-action {
     padding-left: 0.5rem;
 }
 
+footer {
+    background-color: var(--pri-dark-blue);
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    height: 60dvh;
+    align-items: center;
+}
 
+footer .cnt1 {
+    width: 40%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 2rem;
+    gap: 1rem;
+}
+
+.cnt1 > img {
+    filter: brightness(0) invert(1);
+    width: 200px;
+}
+
+.cnt1 div {
+    color: var(--neurtal-light-gray);
+    display: flex;
+    gap: 1rem;
+}
+
+footer .cnt2, .cnt3, .cnt4 {
+    width: 20%;
+    height: 50%;
+    align-self: end;
+}
+
+footer .cnt2 ul li {
+    color: var(--neurtal-light-gray);
+    margin-top: 0.5rem;
+}
+
+footer .cnt3 ul li {
+    color: var(--neurtal-light-gray);
+    margin-top: 0.5rem;
+}
+
+footer .cnt4 ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.cnt4 ul li {
+    border: 1px solid var(--neurtal-light-gray);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cnt4 ul li:hover {
+    border: 1px solid var(--accent-bright-blue);
+}
+
+.cnt4 ul li a .bx:hover {
+    color: var(--accent-bright-blue);
+}
+
+.cnt4 ul li a .bx {
+    color: var(--neurtal-light-gray);
+    font-size: 2rem;
+}
 
 /* media query for small screen devices */
 @media (320px <= width <= 500px) {
@@ -368,7 +442,10 @@ main .call-to-action {
         width: 100%;
         height: auto;
         margin-bottom: 3rem;
+        padding: 0 0.5rem;
     }
+
+
 
     .prod-ctn .info-ctn > p {
         text-align: start;
@@ -410,8 +487,6 @@ main .call-to-action {
         text-align: center;
     }
 
-
-
     main .call-to-action {
         height: auto;
         flex-direction: column;
@@ -427,8 +502,34 @@ main .call-to-action {
     }
 
     .call-to-action .input-ctn {
-        width: 80%;
+        width: 90%;
     }
 
+    footer {
+        height: auto;
+        flex-direction: column;
+        padding-top: 2rem;
+        gap: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    footer .cnt1 {
+        width: 100%;
+        padding: 0;
+    }
+
+    footer .cnt1, .cnt2, .cnt3 {
+        padding-left: 3rem;
+    }
+
+    footer .cnt2, .cnt3, .cnt4 {
+        width: 100%;
+        height: auto;
+        justify-self: start;
+    }
+
+    footer .cnt4 ul {
+        justify-content: center;
+    }
 
 }
