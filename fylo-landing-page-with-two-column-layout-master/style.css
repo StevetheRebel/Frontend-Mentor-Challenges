@@ -115,7 +115,7 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(1.25rem, 10vw, 1.75rem);
+    font-size: clamp(1rem, 8vw, 1.75rem);
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -249,7 +249,7 @@ main .prod-ctn {
 
 .testimonial-ctn .test-person {
     display: flex;
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
     gap: 0.5rem;
 }
 
@@ -359,4 +359,76 @@ main .call-to-action {
     button {
         width: 100%;
     }
+
+    main .prod-ctn {
+        height: auto;
+    }
+
+    .prod-ctn .info-ctn {
+        width: 100%;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+
+    .prod-ctn .info-ctn > p {
+        text-align: start;
+        padding: 0 2%;
+    }
+
+    .info-ctn .link-ctn {
+        margin: auto;
+    }
+
+    .info-ctn .link-ctn p {
+        text-wrap: nowrap;
+    }
+
+    .info-ctn .testimonial-ctn {
+        margin: auto;
+        width: 95%;
+    }
+
+    .testimonial-ctn > p {
+        text-align: start;
+    }
+
+    .test-person .test-details {
+        width: 70%;
+    }
+
+    .test-details p {
+        text-align: start;
+    }
+
+
+    .prod-ctn .img-ctn {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+
+
+    main .call-to-action {
+        height: auto;
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .call-to-action .info-ctn {
+        width: 100%;
+    }
+
+    .call-to-action .info-ctn h2 {
+        padding: 1rem 0;
+    }
+
+    .call-to-action .input-ctn {
+        width: 80%;
+    }
+
+
 }
