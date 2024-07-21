@@ -1,0 +1,61 @@
+/* Poppins import from FontAwesome */
+/* Headings */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Open Sans import from FontAwesome */
+/* Body Text */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+
+:root {
+    --pri-white: hsl(0, 0%, 100%);
+    --pri-pink: hsl(322, 100%, 66%);
+    --pri-light-pink: hsl(321, 100%, 78%);
+    --pri-light-red: hsl(0, 100%, 63%);
+    --neutral-dark-cyan: hsl(192, 100%, 9%);
+    --neutral-pale-blue: hsl(207, 100%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+}
+
+h1, h2 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+header {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 5%;
+}
+
+header img {
+    height: 2rem;
+}
+
+header button {
+    width: 100px;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--pri-white);
+    border: 1px solid var(--pri-pink);
+    color: var(--pri-pink);
+    cursor: pointer;
+}
+
+header button:hover {
+    box-shadow: 0 0 5px var(--pri-light-pink);
+}
