@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+:root {
+  --pri-strong-cyan: hsl(172, 67%, 45%);
+  --neutral-very-dark-grayish-cyan: hsl(183, 100%, 15%);
+  --neutral-dark-grayish-cyan: hsl(186, 14%, 43%);
+  --neutral-grayish-cyan: hsl(184, 14%, 56%);
+  --neutral-light-grayish-cyan: hsl(185, 41%, 84%);
+  --neutral-very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --pri-white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100dvh;
+  font-family: "Space Mono", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--neutral-light-grayish-cyan);
+  gap: 2rem;
+  color: var(--neutral-very-dark-grayish-cyan);
+}
+
+main {
+  width: min(700px, 100%);
+  height: auto;
+  border-radius: 2rem;
+  background-color: var(--pri-white);
+  box-shadow: 0 15px 20px var(--neutral-grayish-cyan);
+  padding: 2rem;
+  display: flex;
+}
+
+input {
+  cursor: pointer;
+}
+
+main .input-ctn {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.input-ctn .bill-ctn {
+  height: auto;
+}
+
+.bill-ctn label {
+  opacity: 0.7;
+  font-size: 0.75rem;
+}
+
+.bill-ctn .bill-amount-ctn {
+  height: 2rem;
+  position: relative;
+}
+
+.bill-amount-ctn input {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  background-color: var(--neutral-very-light-grayish-cyan);
+  border: none;
+  text-align: right;
+  padding-right: 1rem;
+  font-size: 1.25rem;
+  font-family: "Space mono", sans-serif;
+  color: var(--neutral-very-dark-grayish-cyan);
+  border-radius: 0.25rem;
+}
+
+.bill-amount-ctn input::placeholder {
+  color: var(--neutral-dark-grayish-cyan);
+  opacity: 0.7;
+  font-size: 1.25rem;
+}
+
+.bill-amount-ctn img {
+  position: absolute;
+  height: 1rem;
+  left: 0.5rem;
+  top: 0;
+  transform: translateY(50%);
+  color: var(--neutral-very-dark-grayish-cyan);
+}
+
+.input-ctn .tips-ctn {
+  height: auto;
+  width: 100%;
+  font-size: clamp(0.75rem, 4vw, 1rem);
+}
+
+.tips-ctn p {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  font-family: "space mono", sans-serif;
+}
+
+.tips-ctn .tip-ctn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tip-ctn .tip {
+  width: 30%;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 0.25rem;
+  background-color: var(--neutral-very-dark-grayish-cyan);
+  color: var(--neutral-light-grayish-cyan);
+  cursor: pointer;
+}
+
+.tip-ctn .tip.active {
+  background-color: var(--pri-strong-cyan);
+  color: var(--neutral-very-dark-grayish-cyan);
+  opacity: 0.8;
+}
+
+.tip-ctn input {
+  width: 30%;
+  padding-right: 0.25rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: var(--neutral-very-light-grayish-cyan);
+  color: var(--neutral-very-dark-grayish-cyan);
+  font-size: 1rem;
+  font-family: "Space mono", sans-serif;
+  text-align: right;
+}
+
+input:focus {
+  border: 2px solid var(--pri-strong-cyan);
+  outline: none;
+  border-radius: 0.25rem;
+  caret-color: var(--pri-strong-cyan);
+}
+
+.tip-ctn input::placeholder {
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bolder;
+  color: var(--neutral-very-dark-grayish-cyan);
+  font-family: "space mono", sans-serif;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.input-ctn .people-ctn {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.people-ctn .label-ctn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 0.5rem;
+}
+
+.people-ctn .label-ctn label {
+  font-size: 0.75rem;
+  color: var(--neutral-very-dark-grayish-cyan);
+  opacity: 0.8;
+}
+
+.label-ctn label.error {
+  color: hsl(16, 100%, 50%);
+  display: none;
+}
+
+.people-ctn .people-input {
+  position: relative;
+  height: 2rem;
+  margin-top: 0.5rem;
+}
+
+.people-input input {
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  background-color: var(--neutral-very-light-grayish-cyan);
+  border: none;
+  text-align: right;
+  padding-right: 1rem;
+  font-size: 1.25rem;
+  font-family: "Space mono", sans-serif;
+  color: var(--neutral-very-dark-grayish-cyan);
+  border-radius: 0.25rem;
+  caret-color: var(--pri-strong-cyan);
+}
+
+.people-input input:focus {
+  border: 2px solid var(--pri-strong-cyan);
+  outline: none;
+  border-radius: 0.25rem;
+}
+
+.people-input input::placeholder {
+  color: var(--neutral-dark-grayish-cyan);
+  opacity: 0.7;
+  font-size: 1.25rem;
+}
+
+.people-input img {
+  position: absolute;
+  height: 1rem;
+  left: 0.5rem;
+  top: 0;
+  transform: translateY(50%);
+  color: var(--neutral-very-dark-grayish-cyan);
+}
+
+main .output-ctn {
+  width: 50%;
+  height: 100%;
+  background-color: var(--neutral-very-dark-grayish-cyan);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.output-ctn .display-ctn {
+  width: 95%;
+  color: var(--neutral-light-grayish-cyan);
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* tip amount styling */
+.display-ctn .tip-amount-ctn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* total amount styling */
+.display-ctn .total-amount-ctn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* both tip and total container styling */
+.info-ctn {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 50%;
+  height: inherit;
+}
+
+.info-ctn p:last-child {
+  opacity: 0.7;
+  font-size: 0.5rem;
+}
+
+.amount-ctn {
+  font-size: 2rem;
+  display: flex;
+  color: var(--pri-strong-cyan);
+  gap: 0.25rem;
+}
+
+.output-ctn button {
+  width: 95%;
+  height: 2rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Space mono";
+  cursor: pointer;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: var(--pri-strong-cyan);
+  opacity: 0.2;
+}
+
+@media (max-width: 700px) {
+    body {
+        height: auto;
+    }
+
+    header {
+        margin-top: 2rem;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 3rem;
+        border-radius: 2rem 2rem 0 0;
+        padding: 1rem;
+    }
+
+    main .input-ctn {
+        width: 100%;
+        gap: 2rem;
+        padding-block: 0;
+        padding-inline: 0;
+    }
+
+    main .output-ctn {
+        width: 100%;
+        gap: 5rem;
+        margin-bottom: 2rem;
+    }
+}

@@ -1,44 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip calculator app</title>
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.svg" alt="splitter logo" />
+    </header>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <main>
+      <div class="input-ctn">
+        <div class="bill-ctn">
+          <label for="bill">Bill</label>
+          <div class="bill-amount-ctn">
+            <input type="text" name="bill" id="bill" placeholder="0" autocomplete="off" />
+            <img src="images/icon-dollar.svg" alt="dollar sign" />
+          </div>
+        </div>
+        <div class="tips-ctn">
+          <p>Select Tip %</p>
+          <div class="tip-ctn">
+            <div class="tip" value="5">5%</div>
+            <div class="tip" value="10">10%</div>
+            <div class="tip" value="15">15%</div>
+            <div class="tip" value="25">25%</div>
+            <div class="tip" value="50">50%</div>
+            <input type="text" placeholder="custom" autocomplete="off" />
+          </div>
+        </div>
+        <div class="people-ctn">
+          <div class="label-ctn">
+            <label for="no-people">Number of People</label>
+            <label for="error" class="error">Can't be Zero</label>
+          </div>
+          <div class="people-input">
+            <input
+              type="text"
+              name="no-people"
+              id="no-people"
+              placeholder="0"
+              autocomplete="off"
+            />
+            <img src="images/icon-person.svg" alt="person icon" />
+          </div>
+        </div>
+      </div>
+      <div class="output-ctn">
+        <div class="display-ctn">
+          <div class="tip-amount-ctn">
+            <div class="info-ctn">
+              <p>Tip Amount</p>
+              <p>/ person</p>
+            </div>
+            <div class="amount-ctn">
+              <p>$</p>
+              <p>0.00</p>
+            </div>
+          </div>
+          <div class="total-amount-ctn">
+            <div class="info-ctn">
+              <p>Total</p>
+              <p>/ person</p>
+            </div>
+            <div class="amount-ctn">
+              <p>$</p>
+              <p>0.00</p>
+            </div>
+          </div>
+        </div>
+        <button type="reset">reset</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
