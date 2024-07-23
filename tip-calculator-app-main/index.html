@@ -9,6 +9,7 @@
       href="images/favicon-32x32.png"
       type="image/x-icon"
     />
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -21,19 +22,25 @@
         <div class="bill-ctn">
           <label for="bill">Bill</label>
           <div class="bill-amount-ctn">
-            <input type="text" name="bill" id="bill" placeholder="0" autocomplete="off" />
+            <input
+              type="text"
+              name="bill"
+              id="bill"
+              placeholder="0"
+              autocomplete="off"
+            />
             <img src="images/icon-dollar.svg" alt="dollar sign" />
           </div>
         </div>
         <div class="tips-ctn">
           <p>Select Tip %</p>
           <div class="tip-ctn">
-            <div class="tip" value="5">5%</div>
-            <div class="tip" value="10">10%</div>
-            <div class="tip" value="15">15%</div>
-            <div class="tip" value="25">25%</div>
-            <div class="tip" value="50">50%</div>
-            <input type="text" placeholder="custom" autocomplete="off" />
+            <button class="tip" value="5">5%</button>
+            <button class="tip" value="10">10%</button>
+            <button class="tip" value="15">15%</button>
+            <button class="tip" value="25">25%</button>
+            <button class="tip" value="50">50%</button>
+            <input type="text" placeholder="custom" autocomplete="off" id="tip-input" />
           </div>
         </div>
         <div class="people-ctn">
@@ -62,7 +69,7 @@
             </div>
             <div class="amount-ctn">
               <p>$</p>
-              <p>0.00</p>
+              <p id="tip-person">0.00</p>
             </div>
           </div>
           <div class="total-amount-ctn">
@@ -72,13 +79,13 @@
             </div>
             <div class="amount-ctn">
               <p>$</p>
-              <p>0.00</p>
+              <p id="amount-person">0.00</p>
             </div>
           </div>
         </div>
-        <button type="reset">reset</button>
+        <button type="reset" id="reset">reset</button>
       </div>
     </main>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>

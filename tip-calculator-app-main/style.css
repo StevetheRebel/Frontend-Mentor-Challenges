@@ -130,6 +130,7 @@ main .input-ctn {
   background-color: var(--neutral-very-dark-grayish-cyan);
   color: var(--neutral-light-grayish-cyan);
   cursor: pointer;
+  border: none;
 }
 
 .tip-ctn .tip.active {
@@ -310,31 +311,35 @@ main .output-ctn {
 }
 
 @media (max-width: 700px) {
-    body {
-        height: auto;
-    }
+  body {
+    height: auto;
+  }
 
-    header {
-        margin-top: 2rem;
-    }
+  header {
+    margin-top: 2rem;
+  }
 
-    main {
-        flex-direction: column;
-        gap: 3rem;
-        border-radius: 2rem 2rem 0 0;
-        padding: 1rem;
-    }
+  main {
+    flex-direction: column;
+    gap: 3rem;
+    border-radius: 2rem 2rem 0 0;
+    padding: 1rem;
+  }
 
-    main .input-ctn {
-        width: 100%;
-        gap: 2rem;
-        padding-block: 0;
-        padding-inline: 0;
-    }
+  main .input-ctn {
+    width: 100%;
+    gap: 2rem;
+    padding-block: 0;
+    padding-inline: 0;
+  }
 
-    main .output-ctn {
-        width: 100%;
-        gap: 5rem;
-        margin-bottom: 2rem;
-    }
+  main .output-ctn {
+    width: 100%;
+    gap: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .amount-ctn {
+    font-size: clamp(1rem, 9vw, 2rem);
+  }
 }
