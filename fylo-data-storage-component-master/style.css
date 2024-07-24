@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap");
+
+:root {
+  --pri-gradient: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  --neutral-pale-blue: hsl(243, 100%, 93%);
+  --neutral-grayish-blue: hsl(229, 7%, 55%);
+  --neutral-dark-blue: hsl(228, 56%, 26%);
+  --neutral-very-dark-blue: hsl(229, 57%, 11%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 14px;
+  background-color: var(--neutral-very-dark-blue);
+  height: 100dvh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--neutral-pale-blue);
+  font-family: "Raleway", sans-serif;
+}
+
+picture {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50vh;
+  z-index: -1;
+}
+
+picture img {
+  height: 100%;
+}
+
+.ctn {
+  width: min(800px, 100%);
+  height: min(250px, 80%);
+  display: flex;
+  gap: 2rem;
+  align-items: end;
+  align-items: center;
+}
+
+header {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 2rem;
+  justify-content: center;
+  height: 70%;
+  border-radius: 0.25rem 6rem 0.25rem 0.25rem;
+  background-color: var(--neutral-dark-blue);
+  gap: 2rem;
+}
+
+header .header-ctn {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-ctn div {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--neutral-very-dark-blue);
+  border-radius: 0.25rem;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  width: 60%;
+  height: 70%;
+  display: flex;
+  align-items: end;
+}
+
+main .content-ctn {
+  height: 80%;
+  width: 100%;
+  background-color: var(--neutral-dark-blue);
+  border-radius: 0.5rem;
+  padding-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.content-ctn > p {
+  width: 100%;
+}
+
+.content-ctn .progress-ctn {
+  width: 100%;
+  height: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--neutral-very-dark-blue);
+  display: flex;
+  align-items: center;
+  border: none;
+  padding-inline: 2px;
+}
+
+.progress-ctn .progress-bar {
+  background-image: var(--pri-gradient);
+  height: 75%;
+  width: 81.5%;
+  position: relative;
+  border-radius: calc(0.5rem * 0.7);
+  border: none;
+}
+
+.progress-bar .progress-index {
+  position: absolute;
+  height: 0.65rem;
+  width: 0.65rem;
+  border-radius: 50%;
+  background-color: var(--neutral-pale-blue);
+  z-index: 10;
+  right: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.content-ctn .ctn-sizes {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.content-ctn .comment-ctn {
+  width: 150px;
+  height: 64px;
+  background-color: white;
+  position: absolute;
+  right: 2rem;
+  top: -40px;
+  border-radius: 0.5rem 0.5rem 0 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment-ctn .comment-pointer {
+  position: absolute;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  border: none;
+  background-color: white;
+  z-index: 10;
+  bottom: -1.5rem;
+  right: -0.5px;
+  width: 2rem;
+  height: 1.5rem;
+}
+
+.comment-ctn p {
+  color: var(--neutral-grayish-blue);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.comment-ctn p span {
+  font-size: 1.5rem;
+  color: black;
+}
+
+@media (max-width: 500px) {
+  picture {
+    top: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+  picture img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ctn {
+    flex-direction: column;
+    height: auto;
+  }
+
+  header {
+    width: 90%;
+    height: auto;
+    padding-block: 1.5rem;
+  }
+
+  main {
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+
+  main .content-ctn {
+    height: 100%;
+    padding-block: 3rem;
+  }
+
+  .content-ctn .comment-ctn {
+    right: 50%;
+    bottom: -4rem;
+    top: auto;
+    transform: translate(50%, -50%);
+    border-radius: 0.5rem;
+  }
+
+  .comment-ctn .comment-pointer {
+    display: none;
+  }
+}
