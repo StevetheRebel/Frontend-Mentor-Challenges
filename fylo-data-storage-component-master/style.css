@@ -34,6 +34,7 @@ body {
 
 picture {
   position: absolute;
+  width: 100%;
   left: 0;
   bottom: 0;
   height: 50vh;
@@ -42,6 +43,7 @@ picture {
 
 picture img {
   height: 100%;
+  width: 100%;
 }
 
 .ctn {
