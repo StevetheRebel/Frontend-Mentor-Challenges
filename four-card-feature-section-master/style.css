@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --pri-red: hsl(0, 78%, 62%);
+  --pri-cyan: hsl(180, 62%, 55%);
+  --pri-orange: hsl(34, 97%, 64%);
+  --pri-blue: hsl(212, 86%, 64%);
+  --neutral-very-dark-blue: hsl(234, 12%, 34%);
+  --neutral-grayish-blue: hsl(229, 6%, 66%);
+  --neutral-very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 15px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 30vh;
+}
+
+header h1 {
+  font-weight: 200;
+  width: min(500px, 90%);
+  text-align: center;
+  font-size: clamp(1.25rem, 8vw, 2.25rem);
+}
+
+header h1 span {
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+header p {
+  text-align: center;
+  width: min(500px, 90%);
+  color: var(--neutral-grayish-blue);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+main .col-ctn {
+  width: 30%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.col-ctn .card {
+  width: 80%;
+  height: auto;
+  box-shadow: 2px 2px 10px var(--neutral-grayish-blue);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 1rem 1.5rem;
+  gap: 1rem;
+}
+
+.col-ctn .card1 {
+  border-top: 5px solid var(--pri-cyan);
+}
+
+.col-ctn .card2 {
+  border-top: 5px solid var(--pri-red);
+}
+
+.col-ctn .card3 {
+  border-top: 5px solid var(--pri-orange);
+}
+
+.col-ctn .card4 {
+  border-top: 5px solid var(--pri-blue);
+}
+
+.col-ctn .card h2 {
+  font-weight: 700;
+}
+
+.col-ctn .card p {
+  color: var(--neutral-grayish-blue);
+}
+
+.col-ctn .card img {
+  align-self: end;
+  width: 2.5rem;
+}
+
+@media (max-width: 500px) {
+  header {
+    height: auto;
+    padding-block: 1rem;
+  }
+
+  main {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  main .col-ctn {
+    width: 100%;
+    height: auto;
+  }
+}
