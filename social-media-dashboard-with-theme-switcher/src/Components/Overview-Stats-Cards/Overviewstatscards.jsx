@@ -1,10 +1,19 @@
 import React from "react";
-import { Facebook, IconUp, IconDown, Instagram, Twitter, Youtube } from "../../assets/icons";
+import {
+  Facebook,
+  IconUp,
+  IconDown,
+  Instagram,
+  Twitter,
+  Youtube,
+} from "../../assets/icons";
 
 function Overviewstatscards() {
   return (
     <div>
-      <h2 className="font-bold lg:text-2xl md:text-xl text-base text-darkDesaturatedBlue dark:text-whiteText mt-3">Overview - Today</h2>
+      <h2 className="font-bold lg:text-2xl md:text-xl text-base text-darkDesaturatedBlue dark:text-whiteText mt-3">
+        Overview - Today
+      </h2>
       <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 mt-1 gap-4 py-2">
         <Overviewstatcard
           type={"Page Views"}
@@ -30,7 +39,7 @@ function Overviewstatscards() {
         <Overviewstatcard
           type={"Profile Views"}
           logo={<Instagram />}
-          count={'52k'}
+          count={"52k"}
           gauge={true}
           change={"1375%"}
         />
@@ -76,8 +85,10 @@ function Overviewstatcard({ logo, type, count, change, gauge }) {
         {type}
         {logo}
       </div>
-      <div className=" flex justify-between items-center">
-        <p className="text-xl font-bold sm:text-base md:text-2xl text-darkDesaturatedBlue dark:text-whiteText">{count}</p>
+      <div className=" flex justify-between items-end">
+        <p className="text-xl font-bold sm:text-base md:text-2xl text-darkDesaturatedBlue dark:text-whiteText">
+          {count}
+        </p>
         <p
           className={`${
             gauge ? "text-limeGreen" : "text-red-600"

@@ -74,7 +74,7 @@ function Statcard({ logo, user, followers, gauge, change, topBorder }) {
         >
           {gauge ? <IconUp /> : <IconDown />}
           {change}
-          <p>TODAY</p>
+          <p>Today</p>
         </div>
       </div>
     </div>
