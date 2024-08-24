@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-priLightGreen;
+}
+
+.input {
+  @apply ps-2 py-1 rounded-md border-2;
+}
+
+.textStyle {
+  @apply text-base text-neutralDarkerGrey;
+}
