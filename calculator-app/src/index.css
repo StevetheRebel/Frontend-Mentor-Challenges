@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+:root {
+  --bg-main: hsl(222, 26%, 31%);
+  --bg-toggle: hsl(223, 31%, 20%);
+  --bg-screen: hsl(224, 36%, 15%);
+
+  --key-bg: hsl(225, 21%, 49%);
+  --key-shadow: hsl(224, 28%, 35%);
+  --key-accent-bg: hsl(6, 63%, 50%);
+  --key-accent-shadow: hsl(6, 70%, 34%);
+  --key-light-bg: hsl(30, 25%, 89%);
+  --key-light-shadow: hsl(28, 16%, 65%);
+
+  --text-button: hsl(221, 14%, 31%);
+  --text-main: hsl(0, 0%, 100%);
+}
+
+/* Theme 2 */
+.theme-2 {
+  --bg-main: hsl(0, 0%, 90%);
+  --bg-toggle: hsl(0, 5%, 81%);
+  --bg-screen: hsl(0, 0%, 93%);
+
+  --key-bg: hsl(185, 42%, 37%);
+  --key-shadow: hsl(185, 58%, 25%);
+  --key-accent-bg: hsl(25, 98%, 40%);
+  --key-accent-shadow: hsl(25, 99%, 27%);
+  --key-light-bg: hsl(45, 7%, 89%);
+  --key-light-shadow: hsl(35, 11%, 61%);
+
+  --text-main: hsl(60, 10%, 19%);
+  --text-button: hsl(0, 0%, 100%);
+}
+
+/* Theme 3 */
+.theme-3 {
+  --bg-main: hsl(268, 75%, 9%);
+  --bg-toggle: hsl(268, 71%, 12%);
+  --bg-screen: hsl(268, 71%, 12%);
+
+  --key-bg: hsl(281, 89%, 26%);
+  --key-shadow: hsl(285, 91%, 52%);
+  --key-accent-bg: hsl(176, 100%, 44%);
+  --key-accent-shadow: hsl(177, 92%, 70%);
+  --key-light-bg: hsl(268, 47%, 21%);
+  --key-light-shadow: hsl(290, 70%, 36%);
+
+  --text-button: hsl(0, 0%, 100%);
+  --text-main: hsl(52, 100%, 62%);
+  --text-white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.h1-Text {
+  @apply font-sans text-2xl font-bold [@media(min-width:400px)]:text-3xl lg:!text-5xl;
+}
