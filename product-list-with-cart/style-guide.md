@@ -10,9 +10,9 @@ The designs were created to the following widths:
 > 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
 
 ## Colors
-
+hsl(159, 69%, 38%)
 - Red: hsl(14, 86%, 42%)
-- Green: hsl(159, 69%, 38%)
+- Green: 
 
 - Rose 50: hsl(20, 50%, 98%)
 - Rose 100: hsl(13, 31%, 94%)
