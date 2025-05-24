@@ -16,7 +16,11 @@
 
   --color-red: hsl(14, 86%, 42%);
   --color-green: hsl(159, 69%, 38%);
-  --font-family-sans: "Red Hat Text", sans-serif;
+  --font-family-red: "Red Hat Text", sans-serif;
+}
+
+body {
+  @apply font-family-red
 }
 
 .category {
